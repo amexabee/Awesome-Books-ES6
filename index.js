@@ -1,21 +1,21 @@
 /* eslint-disable no-undef */
 
-const bookListView = document.getElementById("booklist");
+const bookListView = document.getElementById('booklist');
 
 function initiew() {
-  bookListView.innerHTML = "";
+  bookListView.innerHTML = '';
   const bookListManager = new BookListManger();
   bookListManager.bookList.forEach((element) => {
-    const liNode = document.createElement("li");
-    const pNode = document.createElement("p");
+    const liNode = document.createElement('li');
+    const pNode = document.createElement('p');
     const bookKText = document.createTextNode(
-      `"${element.name}" by ${element.author}`
+      `"${element.name}" by ${element.author}`,
     );
     pNode.appendChild(bookKText);
-    const buttonNode = document.createElement("button");
-    const removeKText = document.createTextNode("Remove");
+    const buttonNode = document.createElement('button');
+    const removeKText = document.createTextNode('Remove');
     buttonNode.appendChild(removeKText);
-    buttonNode.addEventListener("click", (event) => {
+    buttonNode.addEventListener('click', (event) => {
       event.preventDefault();
       bookListManager.removeBook(element, () => {
         initiew();
@@ -28,33 +28,33 @@ function initiew() {
 }
 
 function setUpNav() {
-  document.getElementById("home").addEventListener("click", (e) => {
+  document.getElementById('home').addEventListener('click', (e) => {
     e.preventDefault();
-    document.getElementById("bokklist_div").style.display = "block";
-    document.getElementById("addnew_div").style.display = "none";
-    document.getElementById("contact_div").style.display = "none";
+    document.getElementById('bokklist_div').style.display = 'block';
+    document.getElementById('addnew_div').style.display = 'none';
+    document.getElementById('contact_div').style.display = 'none';
   });
 
-  document.getElementById("addnew").addEventListener("click", (e) => {
+  document.getElementById('addnew').addEventListener('click', (e) => {
     e.preventDefault();
-    document.getElementById("bokklist_div").style.display = "none";
-    document.getElementById("addnew_div").style.display = "block";
-    document.getElementById("contact_div").style.display = "none";
+    document.getElementById('bokklist_div').style.display = 'none';
+    document.getElementById('addnew_div').style.display = 'block';
+    document.getElementById('contact_div').style.display = 'none';
   });
 
-  document.getElementById("contact").addEventListener("click", (e) => {
+  document.getElementById('contact').addEventListener('click', (e) => {
     e.preventDefault();
-    document.getElementById("bokklist_div").style.display = "none";
-    document.getElementById("addnew_div").style.display = "none";
-    document.getElementById("contact_div").style.display = "block";
+    document.getElementById('bokklist_div').style.display = 'none';
+    document.getElementById('addnew_div').style.display = 'none';
+    document.getElementById('contact_div').style.display = 'block';
   });
 }
 
 window.addEventListener(
-  "load",
+  'load',
   () => {
     initiew();
     setUpNav();
   },
-  false
+  false,
 );

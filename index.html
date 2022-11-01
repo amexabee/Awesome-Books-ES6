@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nac_container">
+          <h4>Awesome Books</h4>
+
+          <ul>
+            <li><a id="home" href="#home">List |</a></li>
+            <li><a id="addnew" href="#addnew"> Add new |</a></li>
+            <li><a id="contact" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <p id="nav_date">March 17, 2022</p>
+      </header>
+      <main>
+        <div id="bokklist_div">
+          <h1 class="main_titlte">All awesome books</h1>
+          <ul id="booklist">
+            <li>
+              <p>Book Titile</p>
+              <button>Remove</button>
+            </li>
+
+            <li>
+              <p>Book Titile2</p>
+              <button>Remove</button>
+            </li>
+          </ul>
+        </div>
+
+        <div id="addnew_div">
+          <h1 class="main_titlte">Add a new book</h1>
+          <form>
+            <div>
+              <label for="title" hidden>Name</label>
+              <input type="text" id="title" name="title" placeholder="Title" />
+            </div>
+            <div>
+              <label for="author" hidden>Name</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                placeholder="Author"
+              />
+            </div>
+            <button id="btn" type="submit">Add</button>
+          </form>
+        </div>
+
+        <div id="contact_div">
+          <h1 class="main_titlte">Contact Information</h1>
+          <p>
+            Do you have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our adress: Streetname 22, 84503 City, Country</li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright: Amanuel & Thankgod @2022</p>
+      </footer>
+    </div>
+    <script src="js/booklismanager.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/addnew.js"></script>
+  </body>
+</html>

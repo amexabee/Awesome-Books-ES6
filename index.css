@@ -1,0 +1,110 @@
+.nac_container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 4px black solid;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+hr {
+  width: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 4px solid black;
+}
+
+main {
+  text-align: center;
+}
+
+.nac_container > ul {
+  display: flex;
+  list-style: none;
+}
+
+.nac_container > ul > li {
+  margin-right: 10px;
+}
+
+#booklist {
+  list-style: none;
+  border: 2px solid black;
+  padding-inline-start: 0;
+  margin-bottom: 10px;
+}
+
+#booklist > li {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#booklist > li > button {
+  max-height: 30px;
+  margin: auto 0;
+  margin-right: 5px;
+}
+
+#booklist > li > p {
+  margin-left: 5px;
+}
+
+#booklist > li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  border: 2px solid black;
+  height: 100vh;
+  border-top: none;
+  border-bottom: none;
+  padding: 20px;
+}
+
+.main_titlte {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  border: 2px black solid;
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+}
+
+#title,
+#author {
+  border: 2px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#btn {
+  padding: 5px;
+  margin-left: 140px;
+}
+
+#addnew_div {
+  display: none;
+}
+
+#contact_div {
+  display: none;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#contact_div .main_titlte {
+  text-align: center;
+  padding-bottom: 20px;
+}

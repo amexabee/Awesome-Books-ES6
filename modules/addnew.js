@@ -1,4 +1,4 @@
-export class Book {
+export default class Book {
   constructor(name, author, id) {
     this.name = name;
     this.author = author;

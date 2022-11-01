@@ -1,6 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export class BookListManger {
+export default class BookListManger {
   constructor() {
     this.bookList = JSON.parse(localStorage.getItem('books'));
     if (this.bookList == null) {

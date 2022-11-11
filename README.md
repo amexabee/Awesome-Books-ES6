@@ -23,7 +23,7 @@ Amanuel Galema
 
 - GitHub: [@amexabee](https://github.com/amexabee)
 - Twitter: [@i_amanuel](https://twitter.com/i_amanuel)
-- LinkedIn: [amanuel-galema](https://www.linkedin.com/in/amanuel-galema/)
+- LinkedIn: [Amanuel Galema](https://www.linkedin.com/in/amanuel-galema/)
 
 ## 🤝 Contributing
 
